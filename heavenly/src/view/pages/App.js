@@ -1,9 +1,8 @@
 
-
 function App() {
   return (
     <div className="App">
-      ola mundo
+      Hello word
     </div>
   );
 }
