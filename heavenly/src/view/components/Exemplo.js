@@ -1,7 +1,7 @@
 function Exemplo () {
   return(
     <div>
-      Exemplo de component
+      Exemplo de componente
     </div>
   )
 }
