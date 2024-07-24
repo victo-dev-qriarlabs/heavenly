@@ -3,23 +3,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import MenuNav from '../components/MenuNav';
 
+import Introducao from '../components/home/Introducao';
+
 const Home = () => {
   return (
     <div className='bg-gray-100'>
       <MenuNav />
+      <Introducao />
       
-      <div
-        style={{ backgroundImage: "url('./img/banner.png')" }}
-        className='w-full h-[600px] bg-cover bg-center flex items-center justify-center relative'
-      >
-        <div className='absolute inset-0 bg-black opacity-50'></div>
-        <div className='p-8 z-10 -mt-32'>
-          <h1 className='text-3xl font-bold mb-7 text-left text-yellow-400'>HEAVENLY - CELESTIAL</h1>
-          <p className='items-center text-justify text-white'>
-            Descubra os segredos do cosmos com nossas previsões diárias. No Heavenly - Celestial, explore como as estrelas e planetas influenciam sua vida.
-          </p>
-        </div>
-      </div>
       <div className='container mx-auto px-4 mt-12 bg-gray-200 p-6 -mt-7'>
         <h2 className='text-3xl font-extrabold mb-5 text-gray-800 text-center mt-16'>O que é Horoscopo?</h2>
         <p className='text-sm mb-8 text-gray-700 leading-relaxed text-center'>
