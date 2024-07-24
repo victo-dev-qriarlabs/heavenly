@@ -1,23 +1,13 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import {faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import MenuNav from '../components/MenuNav';
 
 const Home = () => {
   return (
     <div className='bg-gray-100'>
-      <div className='container mx-auto px-4 h-16 flex items-center justify-between'>
-        <div className='flex items-center'>
-          <FontAwesomeIcon icon={faBars} className='text-xl text-gray-800 mr-3' />
-        </div>
-        <div className='flex-grow text-center'>
-          <div className='font-black text-2xl text-gray-800'>
-            HEAVENLY
-          </div>      
-        </div>
-        <div className='flex items-center' style={{ visibility: 'hidden' }}>
-          <FontAwesomeIcon icon={faBars} className='text-2xl text-gray-800' />
-        </div>
-      </div>
+      <MenuNav />
+      
       <div
         style={{ backgroundImage: "url('./img/banner.png')" }}
         className='w-full h-[600px] bg-cover bg-center flex items-center justify-center relative'

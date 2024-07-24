@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import Home from './Home';
-import Horoscopo from './Horoscopo';
-import Constelacoes from './Constelacoes';
-import Duvidas from './Duvidas';
+import Home from '../view/pages/Home';
+import Horoscopo from '../view/pages/Horoscopo';
+import Constelacoes from '../view/pages/Constelacoes';
+import Duvidas from '../view/pages/Duvidas';
 
 
-function App() {
+function Rotas() {
   return (
     <Router>
       <nav>
@@ -25,4 +25,4 @@ function App() {
     </Router>
   );
 }
-export default App;
+export default Rotas;
