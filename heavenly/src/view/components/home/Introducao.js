@@ -5,7 +5,7 @@ function Introducao() {
   return (
     <div
       style={{ backgroundImage: "url('./img/banner.png')" }}
-      className='w-full h-[600px] bg-cover bg-center flex items-center justify-center relative'
+      className='mt-20 w-full h-[600px] bg-cover bg-center flex items-center justify-center relative'
     >
       <div className='absolute inset-0 bg-black opacity-50'></div>
       <div className='relative z-10 text-center px-8 py-12'> 
