@@ -10,15 +10,18 @@ import Footer from '../components/Footer';
 
 const Home = () => {
   return (
-    <div className='bg-gray-100'>
-      <MenuNav />
+    <>
+     <MenuNav />
+     <div className='bg-gray-100'>
       <Introducao />
       <OqueHoroscopo />
       <HoroscopoDiario />
       <ConstalacaoSigno />
       <DuvidasComuns />
-      <Footer />
+      
     </div>
+    <Footer />
+    </>
   );
 };
 

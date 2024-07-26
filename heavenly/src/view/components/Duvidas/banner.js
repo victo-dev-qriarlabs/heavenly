@@ -1,7 +1,7 @@
 import React from 'react';
 import zodiaco from '../../assets/zodiaco.png'; 
 
-const Banner = () => {
+const banner = () => {
   return (
     <div
       style={{ backgroundImage: "url('/img/banner.png')" }}
@@ -13,4 +13,4 @@ const Banner = () => {
   );
 }
 
-export default Banner;
+export default banner;
