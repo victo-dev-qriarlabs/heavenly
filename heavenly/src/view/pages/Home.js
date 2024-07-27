@@ -11,6 +11,7 @@ import Footer from '../components/Footer';
 const Home = () => {
   return (
     <>
+      <img src= "/img/banner.png" alt="Zodiaco" className='mx-auto img-class' />
      <MenuNav />
       <Introducao />
       <OqueHoroscopo />

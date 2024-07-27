@@ -20,6 +20,21 @@ code {
 .img-class {
   position: fixed;
   top:0;
+  width: 100vw;
   height: 100vh;
   z-index: -20;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotating-image {
+  animation: rotate 70s linear infinite;
+  
 }

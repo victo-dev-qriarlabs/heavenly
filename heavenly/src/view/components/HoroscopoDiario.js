@@ -2,7 +2,7 @@ import React from 'react';
 
 const HoroscopoDiario = () => {
   return (
-    <div className='container mx-auto px-4 mt-12 mb-16'>
+    <div className='container mx-auto px-4 pt-10 bg-white'>
       <h2 className='mb-6 text-verde2 text-center text-3xl font-bold mb-4'>HORÓSCOPO DO DIA</h2>
       <p className='mb-8 text-verde2 text-center mb-6 text-sm'>
         Descubra o que os astros reservam para você hoje. Consulte as previsões diárias para entender as influências e energias que podem impactar seu dia. Deixe as estrelas guiarem suas decisões e aproveitar ao máximo cada momento.

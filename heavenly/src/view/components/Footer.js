@@ -5,8 +5,8 @@ const Footer = () => {
     <>
     <div className='bg-verde2'>
   <div className='container mx-auto px-8 '>
-  <div className='flex flex-col space-y-4 mt-7'>
-  <button className='bg-verde1 text-white font-bold py-2 px-32 mt-10 rounded-xl'>
+  <div className='flex flex-col space-y-4 '>
+  <button className='bg-verde1 text-white font-bold py-2  mt-10 rounded-xl'>
     Ajuda
   </button>
   
