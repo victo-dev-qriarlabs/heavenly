@@ -12,14 +12,11 @@ const Home = () => {
   return (
     <>
      <MenuNav />
-     <div className='bg-gray-100'>
       <Introducao />
       <OqueHoroscopo />
       <HoroscopoDiario />
       <ConstalacaoSigno />
       <DuvidasComuns />
-      
-    </div>
     <Footer />
     </>
   );
