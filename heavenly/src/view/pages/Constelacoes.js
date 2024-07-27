@@ -3,8 +3,8 @@ import MenuNav from '../components/MenuNav';
 import Banner from '../components/Horoscopo/Banner';
 import TextConstelacao from '../components/Constelacoes/TextConstelacao';
 import Footer from '../components/Footer';
-import DuvidasComuns from '../components/home/DuvidasComuns';
-import HoroscopoDiario from '../components/home/HoroscopoDiario';
+import DuvidasComuns from '../components/DuvidasComuns';
+import HoroscopoDiario from '../components/HoroscopoDiario';
 
 const Horoscopo = () => {
   return (

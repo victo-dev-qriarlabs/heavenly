@@ -2,9 +2,9 @@ import React from 'react';
 import MenuNav from '../components/MenuNav';
 import Banner from '../components/Horoscopo/Banner';
 import TextDuvidas from '../components/Duvidas/TextDuvidas';
-import ConstalacaoSigno from '../components/home/ConstalacaoSigno';
+import ConstalacaoSigno from '../components/ConstalacaoSigno';
 import Footer from '../components/Footer';
-import HoroscopoDiario from '../components/home/HoroscopoDiario';
+import HoroscopoDiario from '../components/HoroscopoDiario';
 
 const Horoscopo = () => {
   return (
