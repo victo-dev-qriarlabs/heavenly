@@ -10,7 +10,7 @@ function Introducao() {
       <div className='absolute inset-0 bg-black opacity-50'></div>
       <div className='relative z-10 text-center px-8 py-12'> 
         <h1 className='text-3xl font-bold mb-4 text-white'>HEAVENLY</h1>
-        <p className='text-white mb-6'>
+        <p className='text-white mb-6 text-sm'>
           Descubra os segredos do cosmos com nossas previsões diárias. No Heavenly - Celestial, explore como as estrelas e planetas influenciam sua vida.
         </p>
         <img src={zodiaco} alt="Zodiaco" className='mx-auto' /> 
