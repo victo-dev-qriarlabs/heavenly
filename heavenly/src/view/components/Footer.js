@@ -31,7 +31,7 @@ const Footer = () => {
           </div>
           <h3 className='text-2xl font-semibold text-verde1 mb-4 mt-10'>Apoio</h3>
           <div className='flex justify-center'>
-            <img src='./img/qriar_logo.png' alt='logo qriarlans' className='w-[200px] mb-10' />
+            <img src='/img/qriar_logo.png' alt='logo qriarlans' className='w-[200px] mb-10' />
          </div>
          <div className='bg-verde1 text-white p-3'>
          Copyright © 2024. All rights reserved.

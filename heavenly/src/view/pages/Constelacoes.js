@@ -6,9 +6,10 @@ import Footer from '../components/Footer';
 import DuvidasComuns from '../components/DuvidasComuns';
 import HoroscopoDiario from '../components/HoroscopoDiario';
 
-const Horoscopo = () => {
+const Constelacoes = () => {
   return (
     <div>
+      <img src= "/img/banner.png" alt="Zodiaco" className='mx-auto img-class' />
         <MenuNav />
       <div className='container mx-auto'>
           <Banner />
@@ -21,4 +22,4 @@ const Horoscopo = () => {
   );
 }
 
-export default Horoscopo;
+export default Constelacoes;
