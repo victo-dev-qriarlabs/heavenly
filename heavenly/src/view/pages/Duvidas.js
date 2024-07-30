@@ -2,7 +2,7 @@ import React from 'react';
 import MenuNav from '../components/MenuNav';
 import Banner from '../components/Horoscopo/Banner';
 import TextDuvidas from '../components/Duvidas/TextDuvidas';
-import ConstalacaoSigno from '../components/ConstalacaoSigno';
+import ConstelacaoSigno from '../components/ConstelacaoSigno';
 import Footer from '../components/Footer';
 import HoroscopoDiario from '../components/HoroscopoDiario';
 
@@ -14,7 +14,7 @@ const Duvidas = () => {
            <MenuNav />
            <Banner />
            <TextDuvidas />
-           <ConstalacaoSigno />
+           <ConstelacaoSigno />
            <HoroscopoDiario />
            <Footer />
        </div>

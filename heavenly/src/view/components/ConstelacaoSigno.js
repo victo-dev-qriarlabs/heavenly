@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-const ConstalacaoSigno = () => {
+const ConstelacaoSigno = () => {
   return (
     <>
     <div
@@ -23,4 +23,4 @@ const ConstalacaoSigno = () => {
   )
 }
 
-export default ConstalacaoSigno
+export default ConstelacaoSigno

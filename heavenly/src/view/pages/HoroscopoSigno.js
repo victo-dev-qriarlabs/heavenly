@@ -4,7 +4,7 @@ import MenuNav from '../components/MenuNav';
 import Banner from '../components/Horoscopo/Banner';
 import TextoHoroscopo from '../components/Horoscopo/TextoHoroscopo';
 import Footer from '../components/Footer';
-import ConstalacaoSigno from '../components/ConstalacaoSigno';
+import ConstelacaoSigno from '../components/ConstelacaoSigno';
 import DuvidasComuns from '../components/DuvidasComuns';
 import Teste from './Teste';
 
@@ -19,7 +19,7 @@ const HoroscopoSigno = () => {
       <div className='container mx-auto'>
         <Banner />
         <TextoHoroscopo signo={signo}  />
-        <ConstalacaoSigno />
+        <ConstelacaoSigno />
         <DuvidasComuns />
         {/* <Teste selectedSign={signo} setTextoHoroscopo={setTextoHoroscopo} /> */}
       </div>
