@@ -21,7 +21,7 @@ const HoroscopoSigno = () => {
         <TextoHoroscopo signo={signo}  />
         <ConstalacaoSigno />
         <DuvidasComuns />
-        {/* <Teste selectedSign={signo} setTextoHoroscopo={setTextoHoroscopo} /> */}
+         {/* <Teste selectedSign={signo} setTextoHoroscopo={setTextoHoroscopo} />  */}
       </div>
       <Footer />
     </>

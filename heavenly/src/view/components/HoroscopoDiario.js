@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
+
 const signos = [
   { nome: 'aries', imagem: 'https://img.icons8.com/office/64/aries.png', descricao: 'Otimista, Líder, Impaciente, Orgulhoso', gradiente: 'bg-gradient-to-r from-purple-400 via-pink-500 to-red-500' },
   { nome: 'taurus', imagem: 'https://img.icons8.com/office/64/taurus.png', descricao: 'Determinado, Paciente, Teimoso, Desconfiado', gradiente: 'bg-gradient-to-r from-green-400 via-blue-500 to-purple-500' },
@@ -30,13 +31,13 @@ const HoroscopoDiario = () => {
         Descubra o que os astros reservam para você hoje. Consulte as previsões diárias para entender as influências e energias que podem impactar seu dia. Deixe as estrelas guiarem suas decisões e aproveitar ao máximo cada momento.
       </p>
 
-      <div className='grid grid-cols-2 gap-8 mt-16'>
+      <div className='grid grid-cols-2 gap-8 mt-16 md:grid-cols-4 lg:grid-cols-6 '>
         {signos.map((signo) => (
           <div key={signo.nome} className='flex flex-col items-center cursor-pointer' onClick={() => handleSignoClick(signo.nome)}>
-            <div className={`w-24 h-24 rounded-full ${signo.gradiente} flex items-center justify-center`}>
+            <div className={`w-12 h-12 rounded-full ${signo.gradiente} flex items-center justify-center`}>
               <img src={signo.imagem} alt={signo.nome} className='w-16 h-16'/>
             </div>
-            <p className='text-sm text-verde2 text-center mt-2'>{signo.descricao}</p>
+            <p className='text-sm text-verde2 text-center mt-2 sm:text md:text-xl lg:text-2xl'>{signo.descricao}</p>
             <h3 className='mt-2 text-verde2 font-bold mb-4 text-2xl'>{signo.nome.toUpperCase()}</h3>
           </div>
         ))}
