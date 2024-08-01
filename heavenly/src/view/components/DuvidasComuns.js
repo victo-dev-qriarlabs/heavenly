@@ -1,8 +1,14 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { useNavigate } from 'react-router-dom';
 
 const DuvidasComuns = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/duvidas');
+  };
   return (
     <>
     <div className='w-full px-4 p-6 bg-white'>
@@ -12,7 +18,7 @@ const DuvidasComuns = () => {
      </p>
 
   <div className='flex justify-end mb-10'>
-    <button className='flex items-center text-blue-500 font-bold'>
+    <button onClick={handleClick} className='flex items-center text-blue-500 font-bold'>
       <span className='text-verde2'>Saiba Mais</span>
       <FontAwesomeIcon icon={faChevronRight} className='ml-2 text-verde2' />
     </button>

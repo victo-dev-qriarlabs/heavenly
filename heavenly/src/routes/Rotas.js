@@ -4,7 +4,7 @@
   import Horoscopo from '../view/pages/Horoscopo';
   import HoroscopoSigno from '../view/pages/HoroscopoSigno';
   import Constelacoes from '../view/pages/Constelacoes';
-  import ConstelacaoSigno from '../view/components/ConstelacaoSigno';
+  import ConstelacoesSigno from '../view/pages/ConstelacoesSigno';
   import Duvidas from '../view/pages/Duvidas';
 
 
@@ -23,8 +23,8 @@
           <Route path="/" element={<Home />} />
           <Route path="/Horoscopo" element={<Horoscopo/>} />
           <Route path="/Horoscopo/:signo" element={<HoroscopoSigno/>} />
-          <Route path="/constelacoes/" element={<ConstelacaoSigno/>} />
-          <Route path="/constelacoes/signo" element={<Constelacoes/>} />
+          <Route path="/constelacao" element={<Constelacoes/>} />
+          <Route path="/constelacao/:signo" element={<ConstelacoesSigno/>} />
           <Route path="/Duvidas" element={<Duvidas/>} />  
         </Routes>
       </Router>

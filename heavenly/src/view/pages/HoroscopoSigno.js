@@ -16,7 +16,7 @@ const HoroscopoSigno = () => {
   
   useEffect(() => {
     window.scrollTo(0, 0);
-    console.log(signo); 
+    // console.log(signo); 
 
     const getHoroscopeData = async () => {
       try {
@@ -49,7 +49,7 @@ const HoroscopoSigno = () => {
       )}
     </div>
 
-    <img src= "/img/banner.png" alt="Zodiaco" className='mx-auto img-class' />
+    <img src= "/img/banner.png" alt="Zodiaco" className='mx-auto img-class ' />
       <MenuNav />
       
       <div className='container mx-auto'>

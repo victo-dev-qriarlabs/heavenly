@@ -9,18 +9,18 @@ const signos = [
   { nome: 'virgem', imagem: 'https://img.icons8.com/office/64/virgo.png', descricao: 'Perfeccionista, Gentil, Obsessivo, Crítico', gradiente: 'bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500' },
   { nome: 'libra', imagem: 'https://img.icons8.com/office/64/libra.png', descricao: 'Conciliador, Simpático, Indeciso, Inconstante', gradiente: 'bg-gradient-to-r from-red-400 via-pink-500 to-purple-500' },
   { nome: 'escorpiao', imagem: 'https://img.icons8.com/office/64/scorpio.png', descricao: 'Ambicioso, Esperto, Teimoso, Desconfiado', gradiente: 'bg-gradient-to-r from-pink-400 via-red-500 to-yellow-500' },
-  { nome: 'sargitario', imagem: 'https://img.icons8.com/office/64/sagittarius.png', descricao: 'Leal, Sincero, Descuidado, Exagerado', gradiente: 'bg-gradient-to-r from-indigo-400 via-blue-500 to-teal-500' },
+  { nome: 'sagitario', imagem: 'https://img.icons8.com/office/64/sagittarius.png', descricao: 'Leal, Sincero, Descuidado, Exagerado', gradiente: 'bg-gradient-to-r from-indigo-400 via-blue-500 to-teal-500' },
   { nome: 'capricornio', imagem: 'https://img.icons8.com/office/64/capricorn.png', descricao: 'Honesto, Calmo, Rígido, Calculista', gradiente: 'bg-gradient-to-r from-teal-400 via-cyan-500 to-blue-400' },
   { nome: 'aquario', imagem: 'https://img.icons8.com/office/64/aquarius.png', descricao: 'Criativo, Racional, Nervoso, Radical', gradiente: 'bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500' },
   { nome: 'peixes', imagem: 'https://img.icons8.com/office/64/pisces.png', descricao: 'Bondoso, Compassivo, Dependente, Submisso', gradiente: 'bg-gradient-to-r from-purple-400 via-pink-500 to-red-500' },
   { nome: 'leao', imagem: 'https://img.icons8.com/office/64/leo.png', descricao: 'Sedutor, Carismático, Exagerado, Dramático', gradiente: 'bg-gradient-to-r from-green-400 via-yellow-500 to-orange-500' }
 ];
 
-const HoroscopoDiario = ({ titulo = "HORÓSCOPO DO DIA", descricao = "Descubra o que os astros reservam para você hoje. Consulte as previsões diárias para entender as influências e energias que podem impactar seu dia. Deixe as estrelas guiarem suas decisões e aproveitar ao máximo cada momento." }) => {
+const HoroscopoDiario = ({ titulo = "HORÓSCOPO DO DIA", descricao = "Descubra o que os astros reservam para você hoje. Consulte as previsões diárias para entender as influências e energias que podem impactar seu dia. Deixe as estrelas guiarem suas decisões e aproveitar ao máximo cada momento.", baseRoute = "Horoscopo" }) => {
   const navigate = useNavigate();
 
   const handleSignoClick = (signo) => {
-    navigate(`/horoscopo/${signo}`);
+    navigate(`/${baseRoute}/${signo}`);
   };
 
   return (

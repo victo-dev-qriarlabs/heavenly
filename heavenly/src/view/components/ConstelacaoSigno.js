@@ -1,7 +1,13 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 
 
 const ConstelacaoSigno = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/constelacao');
+  };
   return (
     <>
     <div
@@ -15,7 +21,7 @@ const ConstelacaoSigno = () => {
             Curioso sobre as estrelas que formam seu signo? Mergulhe no universo e descubra as constelações que representam o seu signo do zodíaco. Cada constelação tem uma história única e um significado especial.
           </p>
           <div className="text-right">
-            <button className='mt-4 bg-transparent text-white border border-white font-bold py-2 px-12 rounded'>Ver Mais</button>
+            <button onClick={handleClick} className='mt-4 bg-transparent text-white border border-white font-bold py-2 px-12 rounded'>Ver Mais</button>
           </div>
         </div>
       </div>

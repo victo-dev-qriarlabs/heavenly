@@ -1,4 +1,4 @@
-import React from 'react';
+import { useEffect } from 'react';
 import MenuNav from '../components/MenuNav';
 import Footer from '../components/Footer';
 import ConstelacaoSigno from '../components/ConstelacaoSigno';
@@ -6,6 +6,10 @@ import DuvidasComuns from '../components/DuvidasComuns';
 import HoroscopoDiario from '../components/HoroscopoDiario';
 
 const Horoscopo = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
     <img src= "/img/banner.png" alt="Zodiaco" className='mx-auto img-class' />
