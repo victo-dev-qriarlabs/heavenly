@@ -15,7 +15,7 @@ const Home = () => {
      <MenuNav />
       <Introducao />
       <OqueHoroscopo />
-      <HoroscopoDiario />
+      <HoroscopoDiario  />
       <ConstelacaoSigno />
       <DuvidasComuns />
     <Footer />

@@ -14,7 +14,7 @@ function MenuNav() {
             <div className="w-7 h-0.5 rounded bg-verde1 "></div>
           </label>
 <div className="absolute inset-0 flex flex-col items-center justify-center text-lg font-bold z-[-10] pointer-events-none">
-            <img src={Logo} className='w-8 rounded-full'/>
+            <img src={Logo} alt='' className='w-8 rounded-full'/>
             <h1 className='text-white'>Heavenly</h1>
           </div>
 
@@ -25,9 +25,9 @@ function MenuNav() {
             <div className="bg-white shadow-md lg:bg-transparent lg:shadow-none py-10 lg:py-0 flex flex-col 
               lg:items-center lg:flex-row px-6 space-y-4 lg:space-y-0 lg:space-x-12 h-screen lg:h-auto">
 
-              <a className=" lg:text-white hover:text-gray-300 transition-all text-verde2" href="/#">Home</a>
+              <a className=" lg:text-white hover:text-gray-300 transition-all text-verde2" href="/">Home</a>
               <a className=" lg:text-white hover:text-gray-300 transition-all text-verde2" href="/horoscopo">Horóscopo do dia</a>
-              <a className=" lg:text-white hover:text-gray-300 transition-all text-verde2" href="/constelacoes">Constelação</a>
+              <a className=" lg:text-white hover:text-gray-300 transition-all text-verde2" href="/constelacao">Constelação</a>
               <a className=" lg:text-white hover:text-gray-300 transition-all text-verde2" href="/duvidas">Dúvidas comuns</a>
 
             </div>

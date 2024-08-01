@@ -1,23 +1,26 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import MenuNav from '../components/MenuNav';
 import Footer from '../components/Footer';
-import ConstelacaoSigno from '../components/ConstelacaoSigno';
+import Banner from '../components/Horoscopo/Banner';
+import TextConstelacao from '../components/Constelacoes/TextConstelacao';
 import DuvidasComuns from '../components/DuvidasComuns';
 import HoroscopoDiario from '../components/HoroscopoDiario';
 
 const ConstelacoesSigno = () => {
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
   return (
     <>
     <img src= "/img/banner.png" alt="Zodiaco" className='mx-auto img-class' />
-    <MenuNav />
-       <div className='container mx-auto '>
-        <div className='mt-20'></div>
-        <HoroscopoDiario titulo="CONSTELAÇÃO DE CADA SIGNO" descricao="Curioso sobre as estrelas que formam seu signo? Mergulhe no universo e descubra as constelações que representam o seu signo do zodíaco. Cada constelação tem uma história única e um significado especial."
-/>
-        <ConstelacaoSigno />
-        <DuvidasComuns />
-       </div>
-       <Footer />
+        <MenuNav />
+      <div className='container mx-auto'>
+          <Banner />
+          <TextConstelacao />
+          <DuvidasComuns />
+          <HoroscopoDiario />
+      </div>
+      <Footer/>
     </>
   );
 }

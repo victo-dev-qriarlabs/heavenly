@@ -1,24 +1,46 @@
 import React from 'react';
-
+import { TextConstelacoes } from '../../../utils/TextConstelacoes';
+import { useParams } from 'react-router-dom';
 const TextConstelacao= () => {
+  const { signo } = useParams();
+  const constelacao = TextConstelacoes.find(item => item.nome.toLowerCase() === signo.toLowerCase());
+
+  if (!constelacao) {
+    return <p>Signo não encontrado.</p>; // Mensagem caso o signo não seja encontrado
+  }
+
   return (
-    <div className='mt-12'>
-      <div className='bg-verde2 p-6 shadow-lg md:w-3/4 mx-auto mt-72 w-[400px]'>
-        <h1 className='text-2xl font-extrabold mb-5 text-white text-center mt-7 text-bold'>Historia e Mitologia de Signo</h1>
+    <div className='overflow-hidden mt-40'>
+      <div className=' shadow-lg md:w-3/4 mx-auto my-2 w-11/12'>
+        <h1 className='text-2xl font-extrabold mb-5 text-white text-center mt-7 text-bold'>
+          {constelacao.nome.charAt(0).toUpperCase() + constelacao.nome.slice(1)}
+        </h1>
         <p className='text-justify mb-6 text-xs text-white'>
-          Um horóscopo é uma previsão astrológica baseada na posição dos astros, como o Sol, a Lua e os planetas, no momento do seu nascimento. Ele oferece percepções sobre sua personalidade e possíveis eventos ou tendências na sua vida diária, semanal ou mensal. Os horóscopos são frequentemente usados para entender melhor as influências astrais em várias áreas da vida, como amor, trabalho e saúde.
+          <strong>Período:</strong> {constelacao.data}
         </p>
       </div>
-      <div className='bg-verde2 p-6 shadow-lg md:w-3/4 mx-auto mt-2 w-[400px]'>
-        <h1 className='text-2xl font-extrabold mb-5 text-white text-center mt-7 text-bold'>Constelacao de Zodiaco</h1>
+      <div className='bg-verde2 p-6 shadow-lg md:w-3/4 mx-auto my-2 w-11/12'>
+        <h2 className='text-xl font-extrabold mb-5 text-white text-center mt-7 text-bold'>
+          História e Mitologia
+        </h2>
         <p className='text-justify mb-6 text-xs text-white'>
-        Você pode descobrir seu signo do zodíaco com base na sua data de nascimento. O zodíaco é dividido em doze signos, cada um cobrindo um período específico do ano. Por exemplo, se você nasceu entre 21 de março e 19 de abril, seu signo é Áries. Se nasceu entre 20 de abril e 20 de maio, seu signo é Touro. Cada signo tem características únicas que influenciam a personalidade e o comportamento.
+          {constelacao.historia_mitologia}
         </p>
       </div>
-      <div className='bg-verde2 p-6 shadow-lg md:w-3/4 mx-auto mt-2 w-[400px] mb-2'>
-        <h1 className='text-2xl font-extrabold mb-5 text-white text-center mt-7 text-bold'>A influencia da Constelacao</h1>
+      <div className='bg-verde2 p-6 shadow-lg md:w-3/4 mx-auto my-2 w-11/12'>
+        <h2 className='text-xl font-extrabold mb-5 text-white text-center mt-7 text-bold'>
+          Constelação
+        </h2>
         <p className='text-justify mb-6 text-xs text-white'>
-        Muitas pessoas acreditam que horóscopos podem fornecer conselhos valiosos e insights sobre suas vidas. No entanto, é importante lembrar que os horóscopos são guias gerais baseados em padrões astrológicos. Eles não são previsões exatas e podem variar de pessoa para pessoa. A melhor maneira de usar um horóscopo é como uma ferramenta de reflexão e orientação, não como uma previsão definitiva.
+          {constelacao.zodiaco}
+        </p>
+      </div>
+      <div className='bg-verde2 p-6 shadow-lg md:w-3/4 mx-auto my-2 w-11/12'>
+        <h2 className='text-xl font-extrabold mb-5 text-white text-center mt-7 text-bold'>
+          Influência
+        </h2>
+        <p className='text-justify mb-6 text-xs text-white'>
+          {constelacao.influencia}
         </p>
       </div>
     </div>

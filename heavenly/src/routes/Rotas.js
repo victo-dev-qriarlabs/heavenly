@@ -6,7 +6,6 @@
   import Constelacoes from '../view/pages/Constelacoes';
   import ConstelacoesSigno from '../view/pages/ConstelacoesSigno';
   import Duvidas from '../view/pages/Duvidas';
-  import Teste from '../view/pages/Teste'; 
 
 
   function Rotas() {
@@ -24,10 +23,9 @@
           <Route path="/" element={<Home />} />
           <Route path="/Horoscopo" element={<Horoscopo/>} />
           <Route path="/Horoscopo/:signo" element={<HoroscopoSigno/>} />
-          <Route path="/constelacoes/" element={<ConstelacoesSigno/>} />
-          <Route path="/constelacoes/signo" element={<Constelacoes/>} />
-          <Route path="/Duvidas" element={<Duvidas/>} />
-          <Route path="/Teste" element={<Teste/>} />  
+          <Route path="/constelacao" element={<Constelacoes/>} />
+          <Route path="/constelacao/:signo" element={<ConstelacoesSigno/>} />
+          <Route path="/Duvidas" element={<Duvidas/>} />  
         </Routes>
       </Router>
     );

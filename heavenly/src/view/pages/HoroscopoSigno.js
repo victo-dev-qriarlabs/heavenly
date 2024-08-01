@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useParams } from 'react-router-dom';
 import MenuNav from '../components/MenuNav';
 import Banner from '../components/Horoscopo/Banner';
@@ -6,22 +6,57 @@ import TextoHoroscopo from '../components/Horoscopo/TextoHoroscopo';
 import Footer from '../components/Footer';
 import ConstelacaoSigno from '../components/ConstelacaoSigno';
 import DuvidasComuns from '../components/DuvidasComuns';
-import Teste from './Teste';
+import { fetchHoroscope } from '../../services/rapidapi'; 
 
 const HoroscopoSigno = () => {
   const { signo } = useParams();
-  const [textoHoroscopo, setTextoHoroscopo] = useState('');
+  const [horoscopeData, setHoroscopeData] = useState(null);
+  const [error, setError] = useState(null);
+  const hasFetchedData = useRef(false); 
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    // console.log(signo); 
+
+    const getHoroscopeData = async () => {
+      try {
+        const { data, error } = await fetchHoroscope(signo);
+        if (error) {
+          setError(error);
+        } else {
+          setHoroscopeData(data);
+        }
+      } catch (err) {
+        setError(err.message);
+      }
+    };
+
+    if (signo && !hasFetchedData.current) { 
+      getHoroscopeData();
+      hasFetchedData.current = true; 
+    }
+  }, [signo]);
 
   return (
     <>
-    <img src= "/img/banner.png" alt="Zodiaco" className='mx-auto img-class' />
+    <div>
+      <h1>Horóscopo</h1>
+      {error && <p>Error: {error}</p>}
+      {horoscopeData ? (
+        <TextoHoroscopo titulo={horoscopeData[0]} data={horoscopeData[1]} texto={horoscopeData[2]} />
+      ) : (
+        <p>Carregando...</p>
+      )}
+    </div>
+
+    <img src= "/img/banner.png" alt="Zodiaco" className='mx-auto img-class ' />
       <MenuNav />
+      
       <div className='container mx-auto'>
         <Banner />
-        <TextoHoroscopo signo={signo}  />
+        
         <ConstelacaoSigno />
         <DuvidasComuns />
-        {/* <Teste selectedSign={signo} setTextoHoroscopo={setTextoHoroscopo} /> */}
       </div>
       <Footer />
     </>
