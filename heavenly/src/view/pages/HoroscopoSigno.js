@@ -49,7 +49,6 @@ const HoroscopoSigno = () => {
       )}
     </div>
 
-    <img src= "/img/banner.png" alt="Zodiaco" className='mx-auto img-class ' />
       <MenuNav />
       
       <div className='container mx-auto'>

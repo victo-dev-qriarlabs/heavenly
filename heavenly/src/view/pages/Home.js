@@ -6,12 +6,13 @@ import HoroscopoDiario from '../components/HoroscopoDiario';
 import ConstelacaoSigno from '../components/ConstelacaoSigno';
 import DuvidasComuns from '../components/DuvidasComuns';
 import Footer from '../components/Footer';
-
+import AnimatedBackground from '../styles/AnimatedBackground';
 
 const Home = () => {
   return (
     <>
-      <img src= "/img/banner.png" alt="Zodiaco" className='mx-auto img-class' />
+    <AnimatedBackground />
+
      <MenuNav />
       <Introducao />
       <OqueHoroscopo />

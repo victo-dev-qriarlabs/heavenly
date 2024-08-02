@@ -12,7 +12,6 @@ const Horoscopo = () => {
   }, []);
   return (
     <>
-    <img src= "/img/banner.png" alt="Zodiaco" className='mx-auto img-class' />
     <MenuNav />
        <div className='container mx-auto '>
         <div className='mt-20'></div>
