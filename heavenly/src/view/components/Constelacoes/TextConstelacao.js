@@ -12,34 +12,34 @@ const TextConstelacao= () => {
   return (
     <div className='overflow-hidden mt-40'>
       <div className=' shadow-lg md:w-3/4 mx-auto my-2 w-11/12'>
-        <h1 className='text-2xl font-extrabold mb-5 text-white text-center mt-7 text-bold'>
+        <h1 className='text-2xl font-extrabold mb-5 text-white text-center mt-7 text-bold xl:text-4xl'>
           {constelacao.nome.charAt(0).toUpperCase() + constelacao.nome.slice(1)}
         </h1>
-        <p className='text-justify mb-6 text-xs text-white'>
+        <p className='text-justify mb-6 text-xs text-white xl:text-2xl xl:p-10'>
           <strong>Período:</strong> {constelacao.data}
         </p>
       </div>
       <div className='bg-verde2 p-6 shadow-lg md:w-3/4 mx-auto my-2 w-11/12'>
-        <h2 className='text-xl font-extrabold mb-5 text-white text-center mt-7 text-bold'>
+        <h2 className='text-xl font-extrabold mb-5 text-white text-center mt-7 text-bold xl:text-4xl'>
           História e Mitologia
         </h2>
-        <p className='text-justify mb-6 text-xs text-white'>
+        <p className='text-justify mb-6 text-xs text-white xl:text-2xl xl:p-10'>
           {constelacao.historia_mitologia}
         </p>
       </div>
       <div className='bg-verde2 p-6 shadow-lg md:w-3/4 mx-auto my-2 w-11/12'>
-        <h2 className='text-xl font-extrabold mb-5 text-white text-center mt-7 text-bold'>
+        <h2 className='text-xl font-extrabold mb-5 text-white text-center mt-7 text-bold xl:text-4xl'>
           Constelação
         </h2>
-        <p className='text-justify mb-6 text-xs text-white'>
+        <p className='text-justify mb-6 text-xs text-white xl:text-2xl xl:p-10'>
           {constelacao.zodiaco}
         </p>
       </div>
       <div className='bg-verde2 p-6 shadow-lg md:w-3/4 mx-auto my-2 w-11/12'>
-        <h2 className='text-xl font-extrabold mb-5 text-white text-center mt-7 text-bold'>
+        <h2 className='text-xl font-extrabold mb-5 text-white text-center mt-7 text-bold xl:text-4xl'>
           Influência
         </h2>
-        <p className='text-justify mb-6 text-xs text-white'>
+        <p className='text-justify mb-6 text-xs text-white xl:text-2xl xl:p-10'>
           {constelacao.influencia}
         </p>
       </div>
