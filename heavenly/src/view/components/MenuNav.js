@@ -27,7 +27,7 @@ function MenuNav() {
 
               <a className=" lg:text-white hover:text-gray-300 transition-all text-verde2" href="/">Home</a>
               <a className=" lg:text-white hover:text-gray-300 transition-all text-verde2" href="/horoscopo">Horóscopo do dia</a>
-              <a className=" lg:text-white hover:text-gray-300 transition-all text-verde2" href="/constelacao">Constelação</a>
+              <a className=" lg:text-white hover:text-gray-300 transition-all text-verde2" href="/constelacao">Constelações</a>
               <a className=" lg:text-white hover:text-gray-300 transition-all text-verde2" href="/duvidas">Dúvidas comuns</a>
 
             </div>

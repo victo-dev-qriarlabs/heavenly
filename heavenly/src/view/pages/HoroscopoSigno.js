@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useParams } from 'react-router-dom';
 import MenuNav from '../components/MenuNav';
-import Banner from '../components/Horoscopo/Banner';
 import TextoHoroscopo from '../components/Horoscopo/TextoHoroscopo';
 import Footer from '../components/Footer';
 import ConstelacaoSigno from '../components/ConstelacaoSigno';
@@ -16,7 +15,6 @@ const HoroscopoSigno = () => {
   
   useEffect(() => {
     window.scrollTo(0, 0);
-    // console.log(signo); 
 
     const getHoroscopeData = async () => {
       try {
@@ -51,8 +49,8 @@ const HoroscopoSigno = () => {
 
       <MenuNav />
       
-      <div className='container mx-auto'>
-        <Banner />
+      <div className=''>
+     
         
         <ConstelacaoSigno />
         <DuvidasComuns />
