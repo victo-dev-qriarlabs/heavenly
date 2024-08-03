@@ -5,11 +5,11 @@ const Footer = () => {
     <>
      <footer className='bg-verde2'>
       <div className='container mx-auto px-8 py-8 xl:py-32'>
-        <div className='grid grid-cols-1 md:grid-cols-4 gap-8'>
+        <div className='grid grid-cols-1 xl:grid-cols-4 gap-8'>
         
           <div className='flex flex-col space-y-4'>
-            <button className='bg-verde1 text-white font-bold py-2 rounded-xl'>Ajuda</button>
-            <button className='bg-verde1 text-white font-bold py-2 px-6 rounded-xl'>Entre em contato</button>
+            <button className='bg-verde1 text-white font-bold py-2 rounded-xl xl:bg-transparent xl:text-verde1 xl:font-extrabold'>Ajuda</button>
+            <button className='bg-verde1 text-white font-bold py-2 px-6 rounded-xl xl:bg-transparent xl:text-verde1 xl:font-extrabold' >Entre em contato</button>
           </div>
 
           <div className='flex flex-col space-y-4 text-center'>
@@ -29,7 +29,9 @@ const Footer = () => {
 
           <div className='flex flex-col space-y-4 text-center'>
             <h3 className='text-2xl font-extrabold text-verde1 mb-4'>Apoio</h3>
-            <img src='/img/qriar_logo.png' alt='logo qriarlans' className='w-[200px] mx-auto'/>
+            <a href="https://qriarlabs.com/" target="_blank" rel="noopener noreferrer">
+              <img src='/img/qriar_logo.png' alt='logo qriarlans' className='w-[200px] mx-auto'/>
+            </a>
           </div>
         </div>
       </div>
