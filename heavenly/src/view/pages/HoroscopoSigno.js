@@ -51,8 +51,8 @@ const HoroscopoSigno = () => {
 
       <MenuNav />
       
-      <div className='container mx-auto'>
-        <Banner />
+      <div className=''>
+     
         
         <ConstelacaoSigno />
         <DuvidasComuns />

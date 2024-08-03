@@ -14,7 +14,7 @@ const ConstelacaoSigno = () => {
         
         className='w-full h-[360px] bg-cover bg-center flex items-center justify-center relative xl:mt-24'
       >
-        <div className='absolute inset-0 bg-black opacity-50'></div>
+        <div className='absolute inset-0 bg-black opacity-0'></div>
         <div className=' p-8 rounded-lg z-10'>
           <h1 className='font-bold mb-4 text-center text-white mt-2 text-3xl  xl:text-4xl'>CONSTELAÇÃO DE CADA SIGNO</h1>
           <p className='text-white mb-6 text-sm xl:text-2xl xl:p-16'>

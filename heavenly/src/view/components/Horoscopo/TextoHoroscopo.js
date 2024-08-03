@@ -4,7 +4,7 @@ const TextoHoroscopo = ({ titulo,data,texto }) => {
   const hasData = titulo && data && texto;
   return (
     <div className='mt-12'>
-      <div className='bg-verde2 p-6 rounded-lg shadow-lg w-full md:w-3/4 mx-auto mt-72 w-11/12'>
+      <div className='bg-verde2 p-6 rounded-lg shadow-lg  md:w-3/4 mx-auto mt-72 w-11/12'>
         {hasData ? (
           <>
             <h1 className='text-3xl font-bold mb-4 text-white mt-4 xl:text-4xl'>{titulo}</h1>
