@@ -24,7 +24,7 @@ const HoroscopoDiario = ({ titulo = "HORÓSCOPO DO DIA", descricao = "Descubra o
   };
 
   return (
-    <div className='w-full px-4 pt-10 bg-white'>
+    <div className='w-full px-4 pt-10 bg-white xl:p-24'>
       <h2 className=' text-verde2 text-center text-3xl font-bold mb-4  xl:text-4xl'>{titulo}</h2>
       <p className=' text-verde2 text-center mb-6 text-sm  xl:text-2xl xl:p-16'>
         {descricao}
