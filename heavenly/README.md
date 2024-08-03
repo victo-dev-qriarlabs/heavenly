@@ -1,70 +1,119 @@
-# Getting Started with Create React App
+# Heavenly
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Visão Geral
 
-## Available Scripts
+Este documento descreve a estrutura de pastas do projeto, explicando a finalidade de cada diretório. A organização do projeto segue a arquitetura MVC (Model-View-Controller) para manter o código bem estruturado e fácil de manter.
 
-In the project directory, you can run:
+## Estrutura de Diretórios
 
-### `npm start`
+A estrutura de diretórios do projeto é organizada da seguinte maneira:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+heavenly/  
+├── node_modules/  
+├── public/  
+├── src/  
+│ ├── controllers/  
+│ ├── model/  
+│ ├── routes/  
+│ ├── services/  
+│ ├── utils/  
+│ └── view/  
+│ ├── components/  
+│ ├── pages/  
+│ ├── styles/  
+│ └── assets/  
+├── .gitignore  
+├── package.json  
+├── README.md  
+└── ...  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+### Descrição dos Diretórios
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Descrição das Pastas
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### `controllers/`
+- **Utilidade**: Esta pasta contém a lógica de controle do aplicativo. Os controladores são responsáveis por manipular a entrada do usuário e interagir com os modelos. Eles atuam como intermediários entre os modelos e as visualizações.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### `model/`
+- **Utilidade**: Esta pasta contém a lógica de dados e de negócios do aplicativo. Os modelos representam os dados e as regras de negócios da aplicação, incluindo a interação com bancos de dados.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### `routes/`
+- **Utilidade**: Esta pasta contém a configuração das rotas do aplicativo. As rotas definem quais páginas são chamadas com base nos URLs acessados.
 
-### `npm run eject`
+### `services/`
+- **Utilidade**: Esta pasta contém serviços que realizam operações não diretamente relacionadas à interface do usuário, como interações com APIs externas, autenticação e outras operações de lógica de negócios que não se enquadram diretamente em modelos ou controladores.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### `utils/`
+- **Utilidade**: Esta pasta contém funções utilitárias e helpers que são reutilizados em diferentes partes do aplicativo. Estes utilitários ajudam a evitar a duplicação de código e a manter o código limpo e organizado.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### `view/`
+- **Utilidade**: Esta pasta contém toda a interface do usuário do aplicativo. Ela é subdividida em:
+  - **`components/`**: Contém componentes reutilizáveis da UI. Estes são blocos de construção independentes que podem ser usados em várias partes da aplicação.
+    - **Exemplo**: `Header.js`, `Footer.js`
+  - **`pages/`**: Contém as diferentes páginas do aplicativo. Cada página é composta por vários componentes e representa uma tela ou vista específica.
+    - **Exemplo**: `HomePage.js`, `AboutPage.js`
+  - **`styles/`**: Contém arquivos de estilo CSS usados para estilizar os componentes e páginas do aplicativo.
+    - **Exemplo**: `App.css`, `index.css`
+  - **`assets/`**: Contém arquivos estáticos como imagens e fontes que são utilizados na aplicação.
+    - **Exemplo**: `images/`, `fonts/`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Stack Utilizada
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### IDE:
+- **Visual Studio Code (VSCode)**: Ambiente de Desenvolvimento Integrado utilizado para escrever e gerenciar o código do projeto.
+  - **Versão**: Última versão disponível no site oficial.
 
-## Learn More
+### Front-End:
+- **React**: A biblioteca principal utilizada para a construção da interface do usuário.
+  - **Versão**: 18.3.1
+- **Tailwind CSS**: Utilizado para estilização rápida e eficiente dos componentes.
+  - **Versão**: V3.4.4
+- **Bootstrap**: Utilizado para componentes prontos e layouts responsivos.
+  - **Versão**: V5.1.3
+- **HTML**: Linguagem de marcação utilizada para estruturar o conteúdo na web.
+  - **Versão**: HTML5
+- **CSS**: Folhas de estilo em cascata utilizadas para estilizar o HTML.
+  - **Versão**: CSS3
+- **Git**: Sistema de controle de versão distribuído.
+  - **Versão**: 2.45.2
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Back-End:
+- **Node.js**: Plataforma para execução do JavaScript no lado do servidor.
+  - **Versão**: v20.16.0 (current)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Linguagens de Programação:
+- **JavaScript**: Linguagem principal utilizada tanto no front-end quanto no back-end.
+  - **Versão**: ES6+
 
-### Code Splitting
+## Executando o Projeto
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Siga os passos abaixo para configurar e executar o projeto em sua máquina local.
 
-### Analyzing the Bundle Size
+### Pré-requisitos
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Certifique-se de ter o Node.js e o npm (Node Package Manager) instalados em sua máquina. Você pode baixá-los e instalá-los a partir do [site oficial do Node.js](https://nodejs.org/).
 
-### Making a Progressive Web App
+### Instalação
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1. Clone o repositório do projeto:
+   ```sh
+   git clone https://github.com/seu-usuario/heavenly.git
 
-### Advanced Configuration
+2. Navegue até o diretório do projeto:
+   ```sh
+   cd heavenly
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+3. Instale as dependências do projeto:
+   ```sh
+   npm install
 
-### Deployment
+4. Inicie o servidor de desenvolvimento:
+   ```sh
+   npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+5. Abra seu navegador e acesse:
+   ```sh
+   http://localhost:3000
+   

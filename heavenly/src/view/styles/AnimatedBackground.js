@@ -15,7 +15,7 @@ const AnimatedBackground = () => {
 
   return (
     <div>
-      <div className="bolhas" >
+      <div className="bolhas -z-20" >
         <span style={{ '--interacao': 1 }}></span>
       </div>
     </div>

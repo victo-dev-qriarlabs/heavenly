@@ -12,8 +12,8 @@ const Duvidas = () => {
   }, []);
   return (
     <div>
-      <img src= "/img/banner.png" alt="Zodiaco" className='mx-auto img-class' />
-       <div className='container mx-auto'>
+     
+       <div className=''>
            <MenuNav />
            <Banner />
            <TextDuvidas />

@@ -13,7 +13,7 @@ const Horoscopo = () => {
   return (
     <>
     <MenuNav />
-       <div className='container mx-auto '>
+       <div className=''>
         <div className='mt-20'></div>
            <HoroscopoDiario   />
            <ConstelacaoSigno />

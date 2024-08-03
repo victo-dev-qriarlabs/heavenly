@@ -6,11 +6,13 @@
   import Constelacoes from '../view/pages/Constelacoes';
   import ConstelacoesSigno from '../view/pages/ConstelacoesSigno';
   import Duvidas from '../view/pages/Duvidas';
-
+  import AnimatedBackground from '../view/styles/AnimatedBackground'
 
   function Rotas() {
     return (
-      <Router>
+      <>
+      <AnimatedBackground />
+       <Router>
         <nav>
           <ul>
             <Link to="/"></Link>
@@ -28,6 +30,7 @@
           <Route path="/Duvidas" element={<Duvidas/>} />  
         </Routes>
       </Router>
+      </>
     );
   }
   export default Rotas;
