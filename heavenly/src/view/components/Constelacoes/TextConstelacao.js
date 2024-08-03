@@ -6,7 +6,7 @@ const TextConstelacao= () => {
   const constelacao = TextConstelacoes.find(item => item.nome.toLowerCase() === signo.toLowerCase());
 
   if (!constelacao) {
-    return <p>Signo não encontrado.</p>; // Mensagem caso o signo não seja encontrado
+    return <p>Signo não encontrado.</p>;
   }
 
   return (

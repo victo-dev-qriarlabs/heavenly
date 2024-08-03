@@ -26,7 +26,7 @@ const HoroscopoDiario = ({ titulo = "HORÓSCOPO DO DIA", descricao = "Descubra o
   return (
     <div className='w-full px-4 pt-10 bg-white xl:p-24'>
       <h2 className=' text-verde2 text-center text-3xl font-bold mb-4  xl:text-4xl'>{titulo}</h2>
-      <p className=' text-verde2 text-center mb-6 text-sm  xl:text-2xl xl:p-16'>
+      <p className=' text-verde2 text-center mb-6 text-sm  xl:text-2xl xl:p-16 xl:px-44'>
         {descricao}
       </p>
 
@@ -36,7 +36,7 @@ const HoroscopoDiario = ({ titulo = "HORÓSCOPO DO DIA", descricao = "Descubra o
             <div className={`w-24 h-24 rounded-full ${signo.gradiente} flex items-center justify-center`}>
               <img src={signo.imagem} alt={signo.nome} className='w-16 h-16'/>
             </div>
-            <p className='text-sm text-verde2 text-center mt-2 '>{signo.descricao}</p>
+            <p className='text-sm text-verde2 text-center mt-2 xl:px-5'>{signo.descricao}</p>
             <h3 className='mt-2 text-verde2 font-bold mb-4 text-2xl'>{signo.nome.toUpperCase()}</h3>
           </div>
         ))}

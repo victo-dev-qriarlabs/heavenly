@@ -1,5 +1,4 @@
 import React from 'react';
-import zodiaco from '../../assets/zodiaco.png'; 
 
 const Banner = () => {
   return (

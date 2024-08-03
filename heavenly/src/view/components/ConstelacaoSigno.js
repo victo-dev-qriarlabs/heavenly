@@ -17,10 +17,10 @@ const ConstelacaoSigno = () => {
         <div className='absolute inset-0 bg-black opacity-0'></div>
         <div className=' p-8 rounded-lg z-10'>
           <h1 className='font-bold mb-4 text-center text-white mt-2 text-3xl  xl:text-4xl'>CONSTELAÇÃO DE CADA SIGNO</h1>
-          <p className='text-white mb-6 text-sm xl:text-2xl xl:p-16'>
+          <p className='text-white mb-6 text-sm xl:text-2xl xl:p-16 xl:px-44'>
             Curioso sobre as estrelas que formam seu signo? Mergulhe no universo e descubra as constelações que representam o seu signo do zodíaco. Cada constelação tem uma história única e um significado especial.
           </p>
-          <div className="text-right">
+          <div className="text-right xl:px-44 xl:mb-32">
             <button onClick={handleClick} className='mt-4 bg-transparent text-white border border-white font-bold py-2 px-12 rounded'>Ver Mais</button>
           </div>
         </div>
